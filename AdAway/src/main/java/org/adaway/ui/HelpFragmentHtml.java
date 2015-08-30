@@ -30,9 +30,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
 
-import com.actionbarsherlock.app.SherlockFragment;
+import android.support.v4.app.Fragment;
 
-public class HelpFragmentHtml extends SherlockFragment {
+public class HelpFragmentHtml extends Fragment {
     private Activity mActivity;
 
     private int htmlFile;

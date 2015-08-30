@@ -25,12 +25,12 @@ import org.adaway.helper.ImportExportHelper;
 import org.adaway.util.Constants;
 import org.adaway.util.Log;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.Tab;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBar.Tab;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -41,7 +41,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
-public class ListsActivity extends SherlockFragmentActivity {
+public class ListsActivity extends ActionBarActivity {
     private FragmentActivity mActivity;
     private ActionBar mActionBar;
     private ActionBar.Tab mTab1;

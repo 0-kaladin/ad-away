@@ -29,7 +29,7 @@ import org.adaway.util.Constants;
 import org.adaway.util.Log;
 import org.adaway.util.ScanAdwareLoader;
 
-import com.actionbarsherlock.app.SherlockListFragment;
+import android.support.v4.app.ListFragment;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -42,7 +42,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Button;
 
-public class ScanAdwareListFragment extends SherlockListFragment implements
+public class ScanAdwareListFragment extends ListFragment implements
         LoaderManager.LoaderCallbacks<List<Map<String, String>>> {
     private Activity mActivity;
     private SimpleAdapter mAdapter;

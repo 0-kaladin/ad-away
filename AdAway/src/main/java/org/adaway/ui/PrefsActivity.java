@@ -32,9 +32,8 @@ import org.adaway.util.WebserverUtils;
 import org.sufficientlysecure.rootcommands.Shell;
 import org.sufficientlysecure.rootcommands.util.RootAccessDeniedException;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.app.ActionBar;
+import android.view.MenuItem;
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
 import android.content.Context;
@@ -46,7 +45,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 
-public class PrefsActivity extends SherlockPreferenceActivity {
+public class PrefsActivity extends PreferenceActivity {
     private Context mActivity;
     private ActionBar mActionBar;
 

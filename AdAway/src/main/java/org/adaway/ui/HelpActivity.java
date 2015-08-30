@@ -28,9 +28,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.Tab;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBar.Tab;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 
@@ -39,12 +39,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
+import android.support.v7.app.ActionBarActivity;
 
 import org.adaway.util.Constants;
 import org.sufficientlysecure.donations.DonationsFragment;
 
-public class HelpActivity extends SherlockFragmentActivity {
+public class HelpActivity extends ActionBarActivity {
     ViewPager mViewPager;
     TabsAdapter mTabsAdapter;
 
@@ -148,7 +148,7 @@ public class HelpActivity extends SherlockFragmentActivity {
             }
         }
 
-        public TabsAdapter(SherlockFragmentActivity activity, ViewPager pager) {
+        public TabsAdapter(ActionBarActivity activity, ViewPager pager) {
             super(activity.getSupportFragmentManager());
             mContext = activity;
             mActionBar = activity.getSupportActionBar();

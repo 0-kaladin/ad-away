@@ -22,14 +22,14 @@ package org.adaway.ui;
 
 import org.adaway.R;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.MenuItem;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-public class TcpdumpLogActivity extends SherlockFragmentActivity {
+public class TcpdumpLogActivity extends ActionBarActivity {
     private ActionBar mActionBar;
 
     @Override

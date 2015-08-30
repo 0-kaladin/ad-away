@@ -28,11 +28,11 @@ import org.adaway.util.Constants;
 import org.adaway.util.RegexUtils;
 import org.adaway.util.Log;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.app.SherlockListFragment;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.ListFragment;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -53,9 +53,9 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ListView;
 
-public class BlacklistFragment extends SherlockListFragment implements
+public class BlacklistFragment extends ListFragment implements
         LoaderManager.LoaderCallbacks<Cursor> {
-    private SherlockFragmentActivity mActivity;
+    private ActionBarActivity mActivity;
     private CheckboxCursorAdapter mAdapter;
 
     private long mCurrentRowId;
@@ -293,7 +293,7 @@ public class BlacklistFragment extends SherlockListFragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mActivity = this.getSherlockActivity();
+        mActivity = this.getActivity();
 
         // register long press context menu
         registerForContextMenu(getListView());

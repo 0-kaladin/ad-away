@@ -22,9 +22,9 @@ package org.adaway.ui;
 
 import org.adaway.R;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.MenuItem;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -33,7 +33,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 
-public class ScanAdwareActivity extends SherlockFragmentActivity {
+public class ScanAdwareActivity extends ActionBarActivity {
     private Activity mActivity;
     private ActionBar mActionBar;
 

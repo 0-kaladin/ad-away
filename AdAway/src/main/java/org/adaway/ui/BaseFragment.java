@@ -28,10 +28,11 @@ import org.adaway.service.UpdateService;
 import org.adaway.util.Constants;
 import org.adaway.util.StatusCodes;
 
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+
+import android.support.v4.app.Fragment;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
 import android.content.Intent;
@@ -46,7 +47,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class BaseFragment extends SherlockFragment {
+public class BaseFragment extends Fragment {
     private FragmentActivity mActivity;
 
     private TextView mStatusTitle;
@@ -210,7 +211,7 @@ public class BaseFragment extends SherlockFragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mActivity = getSherlockActivity();
+        mActivity = getActivity();
 
         mStatusTitle = (TextView) mActivity.findViewById(R.id.status_title);
         mStatusText = (TextView) mActivity.findViewById(R.id.status_text);

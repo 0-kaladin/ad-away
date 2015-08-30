@@ -31,8 +31,8 @@ import org.adaway.util.Log;
 import org.adaway.util.StatusCodes;
 import org.adaway.util.Utils;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
 import android.app.Activity;
@@ -46,7 +46,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.LocalBroadcastManager;
 import android.view.View;
 
-public class BaseActivity extends SherlockFragmentActivity {
+public class BaseActivity extends ActionBarActivity {
 
     // Intent extras to give result of applying process to base activity
     public static final String EXTRA_APPLYING_RESULT = "org.adaway.APPLYING_RESULT";

@@ -34,9 +34,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
+import android.support.v4.app.Fragment;
 
-public class HelpFragmentAbout extends SherlockFragment {
+public class HelpFragmentAbout extends Fragment {
 
     /**
      * Workaround for Android Bug. See

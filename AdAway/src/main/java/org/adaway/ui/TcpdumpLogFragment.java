@@ -28,7 +28,7 @@ import org.adaway.util.Constants;
 import org.adaway.util.Log;
 import org.adaway.util.TcpdumpLogLoader;
 
-import com.actionbarsherlock.app.SherlockListFragment;
+import android.support.v4.app.ListFragment;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -44,7 +44,7 @@ import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-public class TcpdumpLogFragment extends SherlockListFragment implements
+public class TcpdumpLogFragment extends ListFragment implements
         LoaderManager.LoaderCallbacks<ArrayList<String>> {
     private Activity mActivity;
     private ArrayAdapter<String> mAdapter;

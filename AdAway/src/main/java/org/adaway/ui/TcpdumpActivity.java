@@ -28,9 +28,9 @@ import org.adaway.util.Log;
 import org.adaway.util.TcpdumpUtils;
 import org.sufficientlysecure.rootcommands.Shell;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.MenuItem; 
 
 import android.app.Activity;
 import android.content.Intent;
@@ -38,7 +38,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ToggleButton;
 
-public class TcpdumpActivity extends SherlockActivity {
+public class TcpdumpActivity extends ActionBarActivity {
     private Activity mActivity;
     private ActionBar mActionBar;
     private ToggleButton mTcpdumpToggle;
