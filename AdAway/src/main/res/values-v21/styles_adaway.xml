@@ -36,7 +36,7 @@
         <item name="android:panelBackground">@drawable/menu_hardkey_panel_adaway</item>
     </style>
 
-    <style name="adaway_solid_ActionBar" parent="@style/Widget.Sherlock.ActionBar.Solid">
+    <style name="adaway_solid_ActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
         <item name="background">@drawable/ab_solid_adaway</item>
         <item name="backgroundStacked">@drawable/ab_stacked_solid_adaway</item>
         <item name="backgroundSplit">@drawable/ab_bottom_solid_adaway</item>
@@ -48,7 +48,7 @@
         <item name="android:progressBarStyle">@style/adaway_ProgressBar</item>
     </style>
 
-    <style name="adaway_transparent_ActionBar" parent="@style/Widget.Sherlock.ActionBar">
+    <style name="adaway_transparent_ActionBar" parent="@style/Widget.AppCompat.ActionBar">
         <item name="background">@drawable/ab_transparent_adaway</item>
         <item name="progressBarStyle">@style/adaway_ProgressBar</item>
         
@@ -60,17 +60,17 @@
         <item name="android:popupBackground">@drawable/menu_dropdown_panel_adaway</item>	
     </style>
 	
-    <style name="adaway_DropDownListView" parent="@style/Widget.Sherlock.ListView.DropDown">
+    <style name="adaway_DropDownListView" parent="@style/Widget.AppCompat.ListView.DropDown">
         <item name="android:listSelector">@drawable/selectable_background_adaway</item>
     </style>
 
-    <style name="adaway_ActionBarTabStyle" parent="@style/Widget.Sherlock.ActionBar.TabView">
+    <style name="adaway_ActionBarTabStyle" parent="@style/Widget.AppCompat.ActionBar.TabView">
         <item name="background">@drawable/tab_indicator_ab_adaway</item>
 
         <item name="android:background">@drawable/tab_indicator_ab_adaway</item>
     </style>
 	
-    <style name="adaway_DropDownNav" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+    <style name="adaway_DropDownNav" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
         <item name="background">@drawable/spinner_background_ab_adaway</item>
 
         <item name="android:background">@drawable/spinner_background_ab_adaway</item>
@@ -78,7 +78,7 @@
         <item name="android:dropDownSelector">@drawable/selectable_background_adaway</item>
     </style>
     
-    <style name="adaway_ProgressBar" parent="@style/Widget.Sherlock.ProgressBar.Horizontal">
+    <style name="adaway_ProgressBar" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_adaway</item>
     </style>
 
