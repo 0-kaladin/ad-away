@@ -33,6 +33,7 @@ import org.sufficientlysecure.rootcommands.Shell;
 import org.sufficientlysecure.rootcommands.util.RootAccessDeniedException;
 
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
@@ -80,7 +81,6 @@ public class PrefsActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
 
         mActivity = this;
-        mActionBar = getSupportActionBar();
 
         mActionBar.setDisplayShowTitleEnabled(true);
         mActionBar.setDisplayHomeAsUpEnabled(true);
