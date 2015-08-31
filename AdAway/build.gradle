@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.+'
     compile 'com.android.support:appcompat-v7:21.0.+'
     compile project(':libraries:Donations')
     compile project(':libraries:HtmlTextView')
