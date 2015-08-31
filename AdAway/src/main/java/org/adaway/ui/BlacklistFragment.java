@@ -28,7 +28,7 @@ import org.adaway.util.Constants;
 import org.adaway.util.RegexUtils;
 import org.adaway.util.Log;
 
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.ListFragment;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -55,7 +55,7 @@ import android.widget.ListView;
 
 public class BlacklistFragment extends ListFragment implements
         LoaderManager.LoaderCallbacks<Cursor> {
-    private FragmentActivity mActivity = this.getActivity();
+    private ActionBarActivity mActivity;
     private CheckboxCursorAdapter mAdapter;
 
     private long mCurrentRowId;
@@ -75,7 +75,7 @@ public class BlacklistFragment extends ListFragment implements
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        android.view.MenuInflater inflater = mActivity
+        android.view.MenuInflater inflater = (android.view.MenuInflater) mActivity
                 .getMenuInflater();
         menu.setHeaderTitle(R.string.checkbox_list_context_title);
         inflater.inflate(R.menu.checkbox_list_context, menu);
@@ -292,6 +292,8 @@ public class BlacklistFragment extends ListFragment implements
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        mActivity = this.getActivity();
 
         // register long press context menu
         registerForContextMenu(getListView());
