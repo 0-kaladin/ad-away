@@ -44,6 +44,8 @@ import android.preference.EditTextPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceFragment;
 
 public class PrefsActivity extends PreferenceActivity {
     private Context mActivity;

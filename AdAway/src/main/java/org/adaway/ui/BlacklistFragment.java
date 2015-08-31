@@ -55,7 +55,7 @@ import android.widget.ListView;
 
 public class BlacklistFragment extends ListFragment implements
         LoaderManager.LoaderCallbacks<Cursor> {
-    private ActionBarActivity mActivity;
+    private Activity mActivity;
     private CheckboxCursorAdapter mAdapter;
 
     private long mCurrentRowId;
@@ -293,7 +293,7 @@ public class BlacklistFragment extends ListFragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mActivity = this.getActivity();
+        mActivity = this.getActionBarActivity();
 
         // register long press context menu
         registerForContextMenu(getListView());
