@@ -311,7 +311,7 @@ public class RedirectionListFragment extends ListFragment implements
                     AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
                     alertDialog.setIcon(android.R.drawable.ic_dialog_alert);
                     alertDialog.setTitle(R.string.no_ip_title);
-                    alertDialog.setMessage(getString(org.adaway.R.string.no_ip));
+                    alertDialog.setMessage(getString(R.string.no_ip));
                     alertDialog.setButton(getString(R.string.button_close),
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dlg, int sum) {
@@ -321,7 +321,8 @@ public class RedirectionListFragment extends ListFragment implements
                     );
                     alertDialog.show();
                 }
-            } else {
+            }
+            else {
                 AlertDialog alertDialog = new AlertDialog.Builder(mActivity).create();
                 alertDialog.setIcon(android.R.drawable.ic_dialog_alert);
                 alertDialog.setTitle(R.string.no_hostname_title);
@@ -345,7 +346,7 @@ public class RedirectionListFragment extends ListFragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mActivity = this.getActivity();
+        mActivity = (ActionBarActivity) this.getActivity();
 
         // register long press context menu
         registerForContextMenu(getListView());
