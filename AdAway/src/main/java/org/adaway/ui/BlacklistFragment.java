@@ -55,7 +55,7 @@ import android.widget.ListView;
 
 public class BlacklistFragment extends ListFragment implements
         LoaderManager.LoaderCallbacks<Cursor> {
-    private Activity mActivity;
+    private ActionBarActivity mActivity;
     private CheckboxCursorAdapter mAdapter;
 
     private long mCurrentRowId;
