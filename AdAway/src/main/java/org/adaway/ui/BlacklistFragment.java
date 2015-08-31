@@ -293,7 +293,7 @@ public class BlacklistFragment extends ListFragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mActivity = this.getActionBarActivity();
+        mActivity = this.getActivity();
 
         // register long press context menu
         registerForContextMenu(getListView());
