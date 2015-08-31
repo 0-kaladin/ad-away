@@ -31,7 +31,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:theme="@style/Theme.adaway">
+        android:theme="@style/Theme.AppCompat">
         <activity
             android:name=".ui.BaseActivity"
             android:label="@string/app_name"
